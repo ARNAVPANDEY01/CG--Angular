@@ -5,12 +5,11 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Hello from BridgeLabz';
-
-  ng0nInit(): void{
-    this.title = "Hello from BridgeLabz";
-  }
+  message :String  = "Hello from BridgeLabz";
+  // logoPath : String = ".assets/BridgeLabz.webp";
+  imgUrl = "https://imgs.search.brave.com/XQ0WY7x-HzRxJRqNjoBGNkKifTo2ztQ9i-N3lXv8uWU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ndW1s/ZXQuYXNzZXR0eXBl/LmNvbS9mcmVlcHJl/c3Nqb3VybmFsLzIw/MjEtMDYvMzJhZjdm/OWYtYjYwMy00ZTEy/LTgzNDAtYmEyNDI1/YmI1ZWU4L0JyaWRn/ZUxhYnouUE5H"
+  
 }
