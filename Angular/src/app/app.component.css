@@ -1,4 +1,4 @@
-#na{
+#image{
     /* height: 20%;
     width: 20%; */
 
@@ -7,6 +7,8 @@
     display: block;
     margin: auto;
     box-shadow: none !important;
+    
+    
     /* background-position: 0%; */
 }
 
@@ -16,4 +18,15 @@ h1{
     margin: auto;
     text-align: center;
     font-size: 50px;
+    
+}
+#Log #image{
+    cursor: pointer;
+}
+
+.error-output {
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
 }
