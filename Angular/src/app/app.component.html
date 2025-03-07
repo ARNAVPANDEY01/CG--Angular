@@ -1,13 +1,17 @@
 <div id="Log">
-  <img id="na"[src]="imgUrl" alt="BridgeLabz">
+
+  <img id="image"[src]="imgUrl" (click) = "onClick($event)" alt="BridgeLabz"/>
+
   <h1>
-    {{message}}
+   Hello {{username}} from BridgeLabz
+   
 
   </h1>
 </div>
-<!-- <div>
-  <h1>{{message}}</h1>
-  <img id="na" [src]="logoPath" alt="BridgeLabz logo" width="200">
-</div> -->
+
+<div id="user">
+  <input (input)="onInput($event)" [(ngModel)] = "username" placeholder="Enter Your name"/>
+  <span class="error-output">{{ this.nameerror }}</span>
+</div>
 
 <router-outlet></router-outlet>
